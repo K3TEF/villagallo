@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+<head>
+	<title>Keystone VHF Club Membership Renewal Form</title>
+<!-- define some style elements-->
+	 <link href="css/bootstrap.css" rel="stylesheet" />
+     <link href="css/bootstrap-theme.css" rel="stylesheet" />
+     <link href="css/font-awesome.css" rel="stylesheet" />
+	 <link href="css/custom.css" rel="stylesheet" />
+<!-- vaidating the form-->
+<script language="JavaScript" src="JS/gen_validatorv31.js" type="text/javascript"></script>
+</head>
+<body>
+<!--Include the NavBar-->
+<div><?php include('./partials/navbar.html');?></div>
+<!--End NavBar-->
+<!--Begin Page Title-->
+    <br /><br /><br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>
+                    W3HZU Keystone VHF Club
+                    <p class="lead">Membership Renewal Form</p>
+                </h1>
+            </div>
+            <div class="col-md-5">
+                <div class="well well-lg">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="//placehold.it/180x100" class="img-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--Input Data -->
+
+	<div class="row">
+			<form method="post" name="myemailform" action="emailSvc.php">
+				<div class="col-md-6">Renewal or New Application</div></br>
+				<input type="text" class="form-control" name="type" style="width:300px"/> 
+				</br>
+				<div class="col-md-6">Full Name</div></br>
+				<input type="text" class="form-control" name="name" style="width:300px"/> 
+				</br>
+				<div class="col-md-6">Callsign</div></br>
+				<input type="text" class="form-control" name="callsign" style="width:200px"/>
+				</br>
+				<div class="col-md-6">Email Address</div></br>
+				<input type="text" class="form-control" name="email" style="width:300px"/>
+				</br>
+				<div class="col-md-6">Phone Number</div></br>
+				<input type="text" class="form-control" name="phone" style="width:200px"/>
+				</br>
+				<div class="col-md-6">License Class</div></br>
+				<input type="text" class="form-control" name="license" style="width:200px"/>
+				</br>
+				<div class="col-md-6">Licence Expiration Year</div></br>
+				<input type="text" class="form-control" name="LicenseExp" style="width:200px"/>
+				</br>
+				<div class="col-md-6">ARRL membership status (y or n)</div></br>
+				<input type="text" class="form-control" name="arrl" style="width:200px"/>
+				</br>
+				<div class="col-md-6">Physical Address</div></br>
+				<input type="text" class="form-control" name="address" style="width:500px"/>
+				</br>
+				<h3>Ham Radio Hobby Interest</h3>
+					<h4>Check all that apply</h4>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="DX">DX</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="AM">AM</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]"value="FM">FM</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="SSB">SSB</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="CW">CW</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="Digital Data">Digital Data</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="Digital Voice">Digital Voice</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="Antenna Building">Antenna Building</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="HF">HF</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="QRP">QRP</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="Contesting">Contesting</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="Satellites">Satellites</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="SSTV">SSTV</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="ATV">ATV</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="UHF/Microwave">UHF/Microwave</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="VHF">VHF</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="SWL">SWL</label>
+						</div>	
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="Tower Climbing">Tower Climbing</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="LF">LF</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="DSP">DSP</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="Astronomy">Astronomy</label>
+						</div>
+					</div>
+					<div class = "col">
+						<div class="checkbox">
+						<label><input type="checkbox" name="Interest[]" value="Photagraphy">Photagraphy</label>
+						</div>
+					</div>
+					
+				</div>
+				</br>
+				<div class="col-md-6">Added Notes</div></br>
+				<input type="text" class="form-control" name="notes" style="width:500px"/>
+				</br>
+				<div class=".col-md-6"><input type="submit" name='submit' value="submit"></div>
+
+			</form>
+				<br /><br /><br />
+				<div><?php include('./partials/footer.html');?></div>
+	</div>
+</div>
+		
+<!--Javascript imported code -->
+<script language="JavaScript">
+// Code for validating the form
+// http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+<!-- JavaScript librearies and fram work -->
+<script type="text/javascript" src="scripts/jquery/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="scripts/Bootstrap/bootstrap.js"></script>
+<a href="scripts/PHP/emailSvc.php"></a>
+
+</body>
+</html>

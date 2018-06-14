@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+<head>
+	<title>Keystone VHF Club Membership Renewal Form</title>
+<!-- define some style elements-->
+	 <link href="css/bootstrap.css" rel="stylesheet" />
+     <link href="css/bootstrap-theme.css" rel="stylesheet" />
+     <link href="css/font-awesome.css" rel="stylesheet" />
+<!-- vaidating the form-->
+<script language="JavaScript" src="JS/gen_validatorv31.js" type="text/javascript"></script>
+
+
+</head>
+
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">KVHF Club</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://danielmelato.com">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://danielmelato.com/members.html">Current Members</a></li>
+                            <li><a href="http://danielmelato.com/membersAdmin.html">Members Admin</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">Emergency Communications</a></li>
+                    <li><a href="http://danielmelato.com/AdventureDays.html">Adventure Days</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <br /><br /><br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>
+                    W3HZU Keystone VHF Club
+                    <p class="lead">Membership Renewal Form</p>
+                </h1>
+            </div>
+            <div class="col-md-5">
+                <div class="well well-lg">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="//placehold.it/180x100" class="img-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Input Data -->
+<div class="container">
+
+	<form method="post" name="myemailform" action="emailSvc.php">
+
+		<div class="col-md-3"><input type="text" class="form-control" name="name" style="width:200px"/>Full Name</div>
+		<div class="col-md-3"><input type="text" class="form-control" name="callsign" style="width:200px"/>Callsign</div>
+		<div class="col-md-3"><input type="text" class="form-control" name="email" style="width:200px"/>Email Address</div>
+		<div class="col-md-3"><input type="text" class="form-control" name="address" style="width:200px"/>Physical Address</div>
+		<div class="col-md-3"><input type="text" class="form-control" name="phone" style="width:200px"/>Phone Number</div>
+		<div class="col-md-3"><input type="text" class="form-control" name="license" style="width:200px"/>License Class</div>
+		<div class="col-md-3"><input type="text" class="form-control" name="LicenseExp" style="width:200px"/>Licence Expiration Year</div>
+		<div class="col-md-3"><input type="text" class="form-control" name="arrl" style="width:200px"/>ARRL membership status (y or n)</div>
+		<div class="col-md-3"><input type="text" class="form-control" name="notes" style="width:200px"/>Added Notes</div>
+
+		<!--<p>
+			<label for='name'>Enter Full Name: </label><br>
+			<input type="text" name="name">
+		</p>
+		<p>
+			<label for='email'>Enter Email Address:</label><br>
+			<input type="text" name="email">
+		</p>
+		<p>
+			<label for='address'>Physical Address:</label><br>
+			<textarea name="address"></textarea>
+		</p>
+		<p>
+			<label for='callsign'>Callsign:</label> <br>
+			<input type="text" name="callsign">
+		</p>
+		<p>
+			<label for='phone'>Phone Number:</label> <br>
+			<input type="text" name="phone">
+
+		</p>
+		<p>
+			<label for='license'>License Class:</label> <br>
+			<input type="text" name="license">
+		</p>
+			<p>
+			<label for='LicenseExp'>License Expiration:</label> <br>
+			<input type="text" name="LicenseExp">
+		</p>
+		<p>
+			<label for='arrl'>ARRL Membership Status:</label> <br>
+			<input type="text" name="arrl">
+		</p>
+		<p>
+			<label for='notes'>Added Notes:</label><br>
+			<textarea name="notes"></textarea>
+		</p>-->
+
+		
+		<div class="row">
+			<div class=".col-xs-6 .col-md-4"></div>
+			<div class=".col-xs-6 .col-md-4"><input type="submit" name='submit' value="submit"></div>
+		</div>
+	</div>
+	</form>
+
+
+<!--Javascript imported code -->
+<script language="JavaScript">
+// Code for validating the form
+// http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+<!-- JavaScript librearies and fram work -->
+<script type="text/javascript" src="scripts/jquery/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="scripts/Bootstrap/bootstrap.js"></script>
+<a href="scripts/PHP/emailSvc.php"></a>
+
+</body>
+</html>

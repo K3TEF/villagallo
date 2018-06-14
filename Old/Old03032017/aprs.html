@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html ng-app="aprsViewer">
+<head>
+    <title>KB3JSV QTH</title>
+    <link rel="shortcut icon" href="images/DanielMelatoPics/radio-icon.ico">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <!--<link href="css/custom.css" rel="stylesheet" />
+    <script src="scripts/AngJs/angular.min.js"></script>-->
+</head>
+<body ng-controller="MainController">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">KB3JSV QTH</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.kb3jsv.com/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="http://www.kb3jsv.com/aprs.html">APRS</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ham Links <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><A href="http://www.dxwatch.com/" target="_blank">DX Watch</A></li>
+                            <li><A href="http://www.aprs.fi/" target="_blank">APRS</A></li>
+                            <li><A href="http://www.qrz.com/" target="_blank">QRZ</A></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav> 
+    <div id="content">
+        <div class="content_item">
+            <div class="form_settings">
+                <h2>APRS station "last heard" locator</h2>
+                <h5>*service provided by APRS.FI*</h5>
+                <form action="/scripts/PHP/service.php" method="POST" id="CallFind">  
+                <br /><br /><br />
+                    <span style="width: 70px">Callsign </span><input class="callsign" type="text" name="callsign" value="" />
+                    <input type="submit" value="submit" />
+                <p><br /></p>
+                    <table ng-contrller="sortCtrl" class="table table-hover">
+                        <tr>
+                            <th><a href="#">CallSign</a></th>
+                            <th><a href="#">Location</a></th>
+                        </tr>
+                        <tr ng-repeat="data in e">
+                            <td>{{data.name}}</td>
+                            <td>{{data.location}}</td>
+                        </tr>
+                    </table>
+                <!--<input class="submit" type="submit" name="submit" value="Send" style="margin-left: 0px; width: 123px;" />-->
+                
+                </form>
+            </div><!--close form_settings-->
+        </div><!--close content_item-->
+    </div><!--close content-->
+
+    <!--<div class="container">
+  
+        <p><br /><br /><br />
+        <button class="btn btn-default">Data Request</button>
+        <p><br /></p>
+        <table ng-contrller="sortCtrl" class="table table-hover">
+            <tr>
+                <th><a href="#">CallSign</a></th>
+                <th><a href="#">Location</a></th>
+            </tr>  
+            <tr ng-repeat="data in e">
+                <td>{{aprs.name}}</td>
+                <td>{{aprs.location}}</td>
+            </tr>
+        </table>
+    </div>-->
+    <!--<footer class="footer">
+        <p>
+            Data provided by APRS.fi http API
+            Copyright &copy; 2015 &middot;
+            Daniel C Melato KB3JSV FM19ss &middot;  <a href="http://www.kb3jsv.com/">Home</a>
+        </p>
+        <br />
+    </footer>-->
+    <!-- JS Assets 
+    <script src="scripts/AngJs/aprs.js"></script>
+    <script src="scripts/GDscript/gd.js"></script>-->
+    <script src="scripts/jquery/jquery-1.11.3.js"></script>
+    <script src="scripts/JS/aprs.js"></script>
+    <script src="scripts/Bootstrap/bootstrap.js"></script>
+    <script src="scripts/Analytics/ganalytics.js"></script>
+</body>
+</html>

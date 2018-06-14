@@ -1,0 +1,58 @@
+﻿.container {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar-collapse{
+    max-height: 340px;
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px inherit;
+    -webkit-overflow-scrolling:touch;
+    /*font-weight: bolder;*/
+}
+
+.body-content{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:50px;
+    padding-bottom:20px;
+}
+input,
+select,
+textarea{
+    max-width: 280px;
+}
+
+.footer {
+  position: center;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+} 
+
+footer {
+    align-content:center;
+}
+
+.grid {
+  width: 500px;
+  height: 250px;
+}
+
+div.table div.row.alternate,div.table div.header {
+background-color: #f9f9f9;
+}
+div.table div.row {
+padding: 6px 0px;
+border-top:1px solid #ddd;
+}
+div.table div.row div.viewOnly {
+overflow:hidden;
+text-overflow: clip ellipsis;
+}
